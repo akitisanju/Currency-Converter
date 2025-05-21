@@ -1,0 +1,120 @@
+/* Reset */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  background: linear-gradient(135deg, #4facfe, #00f2fe);
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.converter-container {
+  width: 100%;
+  max-width: 400px;
+  padding: 20px;
+}
+
+.converter-box {
+  background-color: #ffffff;
+  border-radius: 15px;
+  padding: 30px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  text-align: center;
+}
+
+.converter-box h2 {
+  margin-bottom: 20px;
+  color: #333;
+}
+
+input[type="number"] {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+
+.dropdowns {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.dropdowns div {
+  flex: 1;
+}
+
+.dropdowns label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+  color: #333;
+}
+
+.currency-select {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.currency-select img {
+  width: 32px;
+  height: 20px;
+  border-radius: 4px;
+  object-fit: cover;
+}
+
+select {
+  flex: 1;
+  padding: 10px;
+  border-radius: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  background-color: #f9f9f9;
+  color: #333;
+}
+
+.swap {
+  margin: 0 10px;
+  font-size: 24px;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+  user-select: none;
+}
+
+.swap:hover {
+  transform: rotate(180deg);
+}
+
+#result {
+  margin-top: 15px;
+  font-size: 18px;
+  color: #444;
+  font-weight: 600;
+}
+
+button {
+  margin-top: 20px;
+  width: 100%;
+  padding: 12px;
+  background: #4facfe;
+  border: none;
+  border-radius: 10px;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+button:hover {
+  background: #00c6ff;
+}
